@@ -155,6 +155,37 @@
     </div>
 </section>
 
+    <section id="appointment" style="background:#f9f9f9;">
+    <h2 style="text-align:center;">Book an Appointment</h2>
+
+    <form action="https://formsubmit.co/your-email@example.com" method="POST" 
+          style="max-width:600px; margin:40px auto; display:flex; flex-direction:column; gap:15px;">
+
+        <input type="text" name="parent_name" placeholder="Parent's Name" required 
+               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+
+        <input type="text" name="child_name" placeholder="Child's Name" required 
+               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+
+        <input type="number" name="child_age" placeholder="Child's Age" required 
+               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+
+        <input type="tel" name="phone" placeholder="Phone Number" required 
+               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+
+        <input type="date" name="preferred_date" required 
+               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+
+        <textarea name="message" placeholder="Reason for Visit" rows="4"
+                  style="padding:12px; border:1px solid #ccc; border-radius:5px;"></textarea>
+
+        <button type="submit" 
+                style="background:#2a9d8f; color:white; padding:12px; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
+            Submit Appointment Request
+        </button>
+
+    </form>
+</section>
 <section id="contact" class="contact">
     <h2>Contact & Appointment</h2>
     <p style="margin-top:20px;">
