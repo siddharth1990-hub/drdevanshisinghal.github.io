@@ -130,34 +130,6 @@
             padding: 60px 30px;
         }
 
-        form {
-            max-width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        form input, form textarea {
-            padding: 14px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-        }
-
-        form button {
-            background: #4da6ff;
-            color: white;
-            padding: 14px;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        form button:hover { background: #2b7cd3; }
-
         footer {
             background: #2b7cd3;
             color: white;
@@ -245,17 +217,14 @@
 <section id="appointment">
     <div class="appointment">
         <h2>Book an Appointment</h2>
-        <form action="https://formsubmit.co/info@drdevanshisinghal.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Appointment Request">
-            <input type="text" name="parent_name" placeholder="Parent's Name" required>
-            <input type="text" name="child_name" placeholder="Child's Name" required>
-            <input type="number" name="child_age" placeholder="Child's Age" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <input type="date" name="preferred_date" required>
-            <textarea name="message" rows="4" placeholder="Reason for Visit"></textarea>
-            <button type="submit">Submit Appointment Request</button>
-        </form>
+
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/drdevanshisinghal-info/30min"
+             style="min-width:320px;height:700px;">
+        </div>
+
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
     </div>
 </section>
 
