@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dr. Devanshi SInghal | Pediatrician</title>
+    <title>Dr. Devanshi Singhal | Pediatrician</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -19,7 +19,7 @@
         }
 
         header {
-            background: #2a9d8f;
+            background: #4da6ff;
             color: white;
             padding: 20px 50px;
             display: flex;
@@ -39,7 +39,7 @@
         }
 
         .hero {
-            background: #e9f5f3;
+            background: #e6f3ff;
             padding: 80px 20px;
             text-align: center;
         }
@@ -55,7 +55,7 @@
         }
 
         .btn {
-            background: #2a9d8f;
+            background: #4da6ff;
             color: white;
             padding: 12px 25px;
             text-decoration: none;
@@ -66,10 +66,6 @@
             padding: 60px 20px;
             max-width: 1000px;
             margin: auto;
-        }
-
-        .about, .services, .contact {
-            text-align: center;
         }
 
         .services-grid {
@@ -85,8 +81,25 @@
             border-radius: 8px;
         }
 
+        form input, form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        form button {
+            background: #4da6ff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
         footer {
-            background: #264653;
+            background: #2b7cd3;
             color: white;
             text-align: center;
             padding: 20px;
@@ -102,13 +115,15 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Dr. Devanshi Singhal </h1>
+    <h1>Dr. Devanshi Singhal</h1>
     <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#appointment">Appointment</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -116,21 +131,32 @@
 <section class="hero">
     <h2>Compassionate Pediatric Care</h2>
     <p>Dedicated to the health and happiness of your child.</p>
-    <a href="#contact" class="btn">Book Appointment</a>
+    <a href="#appointment" class="btn">Book Appointment</a>
 </section>
 
-<section id="about" class="about">
-    <h2>About the Doctor</h2>
-    <p style="margin-top:20px;">
-        Dr. Devanshi SInghal is an experienced pediatrician committed to providing
+<section id="about">
+    <h2 style="text-align:center;">About the Doctor</h2>
+
+    <p style="margin-top:20px; text-align:center;">
+        Dr. Devanshi Singhal is an experienced pediatrician committed to providing
         comprehensive medical care for infants, children, and adolescents.
         With a patient-first approach, she ensures every child receives
         personalized attention and evidence-based treatment.
     </p>
+
+    <p style="margin-top:20px; text-align:center;">
+        She completed her MBBS from Maulana Azad Medical College (MAMC), Delhi,
+        MD Pediatrics from Lady Hardinge Medical College, Delhi, and MRCPCH from Edinburgh, UK.
+    </p>
+
+    <p style="margin-top:20px; text-align:center;">
+        She has worked with major tertiary care centers such as MAMC and Baba Saheb Ambedkar Hospital,
+        and has also been associated with leading institutions like Apollo Hospitals and Cloudnine.
+    </p>
 </section>
 
-<section id="services" class="services">
-    <h2>Services Offered</h2>
+<section id="services">
+    <h2 style="text-align:center;">Services Offered</h2>
 
     <div class="services-grid">
         <div class="service-box">
@@ -155,40 +181,30 @@
     </div>
 </section>
 
-    <section id="appointment" style="background:#f9f9f9;">
+<section id="appointment" style="background:#f2f9ff;">
     <h2 style="text-align:center;">Book an Appointment</h2>
 
-    <form action="https://formsubmit.co/your-email@example.com" method="POST" 
+    <form action="https://formsubmit.co/info@drdevanshisinghal.com" method="POST" 
           style="max-width:600px; margin:40px auto; display:flex; flex-direction:column; gap:15px;">
 
-        <input type="text" name="parent_name" placeholder="Parent's Name" required 
-               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Appointment Request">
 
-        <input type="text" name="child_name" placeholder="Child's Name" required 
-               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+        <input type="text" name="parent_name" placeholder="Parent's Name" required>
+        <input type="text" name="child_name" placeholder="Child's Name" required>
+        <input type="number" name="child_age" placeholder="Child's Age" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="preferred_date" required>
 
-        <input type="number" name="child_age" placeholder="Child's Age" required 
-               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
+        <textarea name="message" placeholder="Reason for Visit" rows="4"></textarea>
 
-        <input type="tel" name="phone" placeholder="Phone Number" required 
-               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-
-        <input type="date" name="preferred_date" required 
-               style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-
-        <textarea name="message" placeholder="Reason for Visit" rows="4"
-                  style="padding:12px; border:1px solid #ccc; border-radius:5px;"></textarea>
-
-        <button type="submit" 
-                style="background:#2a9d8f; color:white; padding:12px; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
-            Submit Appointment Request
-        </button>
-
+        <button type="submit">Submit Appointment Request</button>
     </form>
 </section>
-<section id="contact" class="contact">
-    <h2>Contact & Appointment</h2>
-    <p style="margin-top:20px;">
+
+<section id="contact">
+    <h2 style="text-align:center;">Contact & Clinic Details</h2>
+    <p style="margin-top:20px; text-align:center;">
         📍 Clinic Address: Medicenter, C-5/32, Safdarjung Development Area, New Delhi - 110016<br><br>
         📞 Phone: +91-9901097811<br><br>
         📧 Email: info@drdevanshisinghal.com
@@ -196,7 +212,7 @@
 </section>
 
 <footer>
-    © 2026 Dr. Devanshi Singhal | Tiny tots Pediatric Clinic
+    © 2026 Dr. Devanshi Singhal | Pediatric Clinic
 </footer>
 
 </body>
