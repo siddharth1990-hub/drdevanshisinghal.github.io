@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -18,7 +14,6 @@
             color: #333;
         }
 
-        /* ===== HEADER ===== */
         header {
             background: white;
             padding: 15px 60px;
@@ -37,9 +32,7 @@
             gap: 15px;
         }
 
-        .logo-section img {
-            height: 50px;
-        }
+        .logo-section img { height: 50px; }
 
         .logo-section h1 {
             font-size: 22px;
@@ -55,11 +48,8 @@
             transition: 0.3s;
         }
 
-        nav a:hover {
-            color: #4da6ff;
-        }
+        nav a:hover { color: #4da6ff; }
 
-        /* ===== HERO ===== */
         .hero {
             background: linear-gradient(to right, #e6f3ff, #f2f9ff);
             padding: 100px 20px;
@@ -87,9 +77,7 @@
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background: #2b7cd3;
-        }
+        .btn:hover { background: #2b7cd3; }
 
         section {
             padding: 80px 20px;
@@ -104,10 +92,9 @@
             color: #2b7cd3;
         }
 
-        /* ===== ABOUT ===== */
         .about-content {
             text-align: center;
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
         }
 
@@ -118,11 +105,8 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
-        .about-content p {
-            margin-bottom: 20px;
-        }
+        .about-content p { margin-bottom: 20px; }
 
-        /* ===== SERVICES ===== */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -138,11 +122,8 @@
             transition: 0.3s;
         }
 
-        .service-box:hover {
-            transform: translateY(-5px);
-        }
+        .service-box:hover { transform: translateY(-5px); }
 
-        /* ===== APPOINTMENT ===== */
         .appointment {
             background: #f2f9ff;
             border-radius: 20px;
@@ -175,11 +156,8 @@
             transition: 0.3s;
         }
 
-        form button:hover {
-            background: #2b7cd3;
-        }
+        form button:hover { background: #2b7cd3; }
 
-        /* ===== FOOTER ===== */
         footer {
             background: #2b7cd3;
             color: white;
@@ -195,9 +173,7 @@
                 gap: 10px;
             }
 
-            nav a {
-                margin-left: 15px;
-            }
+            nav a { margin-left: 15px; }
         }
     </style>
 </head>
@@ -231,45 +207,34 @@
         <img src="Dr.%20Profile.jpg" alt="Dr. Devanshi Singhal">
 
         <p>
-            Dr. Devanshi Singhal is an experienced pediatrician committed to providing
-            comprehensive medical care for infants, children, and adolescents.
-            With a patient-first approach, she ensures every child receives
-            personalized attention and evidence-based treatment.
+            Dr. Devanshi Singhal is an experienced pediatrician committed to providing comprehensive medical care for newborns, infants, children, and adolescents. With a patient-first approach, she ensures every child receives personalized attention and evidence-based treatment.
         </p>
 
         <p>
-            She completed her MBBS from Maulana Azad Medical College (MAMC), Delhi,
-            MD Pediatrics from Lady Hardinge Medical College, Delhi,
-            and MRCPCH from Edinburgh, UK.
+            She has trained under eminent pediatricians from premier institutions. She completed her MBBS from Maulana Azad Medical College (MAMC), Delhi, MD Pediatrics from Lady Hardinge Medical College, Delhi, and MRCPCH from Edinburgh, UK.
         </p>
 
         <p>
-            She has worked with major tertiary care centers such as MAMC and
-            Baba Saheb Ambedkar Hospital, and has also been associated with
-            leading institutions like Apollo Hospitals and Cloudnine.
+            She has worked with some of Asia's biggest and busiest public hospitals such as Kalawati Saran Children's Hospital and Lok Nayak Hospital. She has also been associated with leading institutions like Apollo Hospitals and Cloudnine and gained extensive experience managing precious newborns.
         </p>
     </div>
 </section>
 
 <section id="services">
     <h2>Services Offered</h2>
-
     <div class="services-grid">
         <div class="service-box">
             <h3>Newborn Care</h3>
             <p>Complete newborn checkups and growth monitoring.</p>
         </div>
-
         <div class="service-box">
             <h3>Vaccinations</h3>
             <p>Full immunization services as per recommended schedules.</p>
         </div>
-
         <div class="service-box">
             <h3>Growth & Development</h3>
             <p>Monitoring developmental milestones and nutrition guidance.</p>
         </div>
-
         <div class="service-box">
             <h3>Adolescent Care</h3>
             <p>Comprehensive care for teenage health concerns.</p>
@@ -280,19 +245,15 @@
 <section id="appointment">
     <div class="appointment">
         <h2>Book an Appointment</h2>
-
         <form action="https://formsubmit.co/info@drdevanshisinghal.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="New Appointment Request">
-
             <input type="text" name="parent_name" placeholder="Parent's Name" required>
             <input type="text" name="child_name" placeholder="Child's Name" required>
             <input type="number" name="child_age" placeholder="Child's Age" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
             <input type="date" name="preferred_date" required>
-
             <textarea name="message" rows="4" placeholder="Reason for Visit"></textarea>
-
             <button type="submit">Submit Appointment Request</button>
         </form>
     </div>
@@ -300,10 +261,9 @@
 
 <section id="contact">
     <h2>Contact & Clinic Details</h2>
-
     <div style="text-align:center; margin-top:20px;">
         📍 Medicenter, C-5/32, Safdarjung Development Area, New Delhi - 110016<br><br>
-        📞 +91-9901097811<br><br>
+        📞 +91-11-41823117<br><br>
         📧 info@drdevanshisinghal.com
     </div>
 </section>
